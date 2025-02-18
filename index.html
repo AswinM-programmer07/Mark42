@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <bod>
+    <div class="container-fluid logo-name justify-between">
+      <div class="row nav">
+        <div class="col-lg-2 text-start">
+          <h1>
+            <span class="red">Neural</span><br /><span class="white"
+              >Assistance</span
+            >
+          </h1>
+        </div>
+        <div class="col-lg-3 pt-5 baxa" style="border-radius: 100%">
+          <input type="text" placeholder="search" class="br-3" />
+          <a href="">
+            <i
+              class="fa fa-search"
+              style="
+                font-size: 40px;
+                color: rgb(255, 255, 255);
+                text-shadow: 2px 2px 4px #000000;
+              "
+            ></i>
+          </a>
+        </div>
+        <div class="col-lg-1 text-end white pt-4 nav-link ch">
+          <a href="#">Home</a>
+        </div>
+        <div class="col-lg-1 text-end white pt-4 nav-link ch">
+          <a href="">About</a>
+        </div>
+        <div class="col-lg-1 text-end white pt-4 nav-link ch">
+          <a href="">Blog</a>
+        </div>
+        <div class="col-lg-1 text-end white pt-4 nav-link ch">
+          <a href="">Login</a>
+        </div>
+        <div class="col-lg-1 text-end white pt-4 nav-link ch">
+          <a href="">Register</a>
+        </div>
+      <!--   <div class="col-lg-1 text-end white pt-4 nav-link ch">
+          <a href="">Acount</a>
+        </div> -->
+        <div class="col-lg-1 text-end white pt-4 nav-link ch">
+          <a href="">Menu</a>
+        </div>
+      </div>
+
+      <div class="container-fluid mb-5" id="home">
+        <div class="row">
+          <div class="col-md-12 pt-5">
+            <h1 style="color: rgb(255, 255, 255)">Neural  Assistance</h1>
+          </div>
+      </div>
+    </div>
+    </div>
+    <div>
+      <div class="container" style="border-radius:20px">
+
+      </div>
+    </div>
+    <div>
+      <a href="https://colab.research.google.com/drive/1DD5SD_JgCd_glYU9rGSnZsFt8O-1amR6#scrollTo=-Tc94M37ogIJ">Colab Model</a>
+    </div>
+<div class="parallax"></div>
+    <div class="container p-5" style="color:white; font-size:1.5rem; background-color:#333; border-radius: 15px" >
+      <h2>2. Methodology</h2>
+<h3 class="p-3">2.1 Linear Classification</h3>
+<p>Used for binary classification: <strong>"Psychiatric issue" vs. "No psychiatric issue"</strong></p>
+<p>Implemented using logistic regression or linear SVM.</p>
+<p>Features are selected based on demographic, psychological, and medical factors.</p>
+
+<h3 class="p-3">2.2 Deep Neural Network (DNN) Classification</h3>
+<p>If a psychiatric disorder is detected, a DNN classifies the specific disorder.</p>
+<p>The DNN consists of multiple layers to capture complex patterns in the data.</p>
+<p>Loss function: <strong>Categorical Cross-Entropy</strong>. Optimizer: <strong>Adam or RMSprop</strong>.</p>
+
+<h2>3. Features Affecting Classification</h2>
+<h3 class="p-3">3.1 Demographic Features</h3>
+<ul>
+    <li>Age</li>
+    <li>Gender</li>
+    <li>Education level</li>
+    <li>Employment status</li>
+    <li>Marital status</li>
+    <li>Socioeconomic status</li>
+</ul>
+
+<h3 class="p-3">3.2 Genetic & Biological Factors</h3>
+<ul>
+    <li>Family history of mental illness</li>
+    <li>Neurological disorders</li>
+    <li>Chronic diseases</li>
+</ul>
+
+<h3 class="p-3">3.3 Psychological & Behavioral Features</h3>
+<ul>
+    <li>Sleep patterns</li>
+    <li>Appetite changes</li>
+    <li>Mood fluctuations</li>
+    <li>Social withdrawal</li>
+    <li>Energy levels</li>
+    <li>Cognitive abilities</li>
+</ul>
+
+<h3 class="p-3">3.4 Medical & Clinical Features</h3>
+<ul>
+    <li>Past psychiatric diagnoses</li>
+    <li>Medication history</li>
+    <li>Substance use (alcohol, drugs, smoking)</li>
+    <li>Self-harm or suicidal thoughts</li>
+</ul>
+
+<h3 class="p-3">3.5 Environmental & Social Factors</h3>
+<ul>
+    <li>Childhood trauma or abuse</li>
+    <li>Work-related stress</li>
+    <li>Relationship conflicts</li>
+    <li>Exposure to violence</li>
+    <li>Social support system</li>
+</ul>
+
+<h3 class="p-3">3.6 Physiological & Neurological Data (if applicable)</h3>
+<ul>
+    <li>EEG signals</li>
+    <li>MRI/fMRI scans</li>
+    <li>Heart rate variability</li>
+    <li>Cortisol levels</li>
+</ul>
+
+<h2 class="p-5">4. Data Sources</h2>
+<p>To train the model, datasets can be sourced from:</p>
+<ul>
+    <li><a href="https://www.kaggle.com" style="color: cyan;">Kaggle</a></li>
+    <li><a href="https://archive.ics.uci.edu/ml/index.php" style="color: cyan;">UCI Machine Learning Repository</a></li>
+    <li><a href="https://physionet.org" style="color: cyan;">PhysioNet</a></li>
+    <li><a href="https://www.nlm.nih.gov/databases/download.html" style="color: cyan;">NIH National Library of Medicine</a></li>
+    <li><a href="https://openneuro.org" style="color: cyan;">OpenNeuro</a></li>
+</ul>
+
+<h2 class="p-5">5. Ethical Considerations</h2>
+<p><strong>Privacy & Confidentiality:</strong> Ensure compliance with HIPAA, GDPR, and other data protection laws.</p>
+<p><strong>Bias & Fairness:</strong> Address potential biases in the dataset.</p>
+<p><strong>Clinical Validation:</strong> Results should be reviewed by mental health professionals before use in real-world applications.</p>
+
+<h2 class="p-5">6. Model Evaluation</h2>
+<p>The model's performance will be assessed using:</p>
+<ul>
+    <li>Accuracy</li>
+    <li>Precision, Recall & F1-Score</li>
+    <li>ROC-AUC Curve (for binary classification)</li>
+    <li>Confusion Matrix (to evaluate classification performance)</li>
+</ul>
+
+<h2 class="p-5">7. Implementation</h2>
+<p>The model will be implemented using TensorFlow and scikit-learn with the following steps:</p>
+<ol>
+    <li>Data Preprocessing (handling missing values, normalizing data, feature engineering)</li>
+    <li>Training the Linear Classifier</li>
+    <li>Training the DNN for Multi-class Classification</li>
+    <li>Evaluating the Model</li>
+    <li>Deploying the Model (if required)</li>
+</ol>
+
+<h2 class="p-5">8. Future Improvements</h2>
+<ul>
+    <li>Incorporating deep learning techniques like CNNs for analyzing MRI scans.</li>
+    <li>Integrating real-time monitoring using IoT devices.</li>
+    <li>Enhancing model interpretability with explainable AI (XAI) techniques.</li>
+</ul>
+
+
+    </div>
+    </div>
+    <div class="container ">
+      <div class="wapp">
+      <div class="items item1"></div>
+      <div class="items item2"></div>
+      <div class="items item3"></div>
+      <div class="items item4"></div>
+      <div class="items item5"></div>
+      <div class="items item6"></div>
+      <div class="items item7"></div>
+      <div class="items item8"></div>
+    </div>
+    </div>
+    <div class="container p-5" style="color:white; font-size:1.5rem; background-color:#333; border-radius: 15px" >
+    <div class="container">
+      <h2 class="p-3">2. Data Collection</h2>
+<p>Relevant text data sources include:</p>
+<ul>
+    <li><strong>Patient journals:</strong> Before, during, and after treatment notes.</li>
+    <li><strong>Doctor-patient conversations:</strong> Transcribed text.</li>
+    <li><strong>Online patient forums & reviews.</strong></li>
+    <li><strong>Survey responses:</strong> Self-reported emotions.</li>
+</ul>
+
+<h2 class="p-3">3. Preprocessing the Data</h2>
+<ul>
+    <li><strong>Text Cleaning:</strong> Removing stopwords, special characters, and irrelevant content.</li>
+    <li><strong>Tokenization & Lemmatization:</strong> Converting words to their root forms.</li>
+    <li><strong>NER (Named Entity Recognition):</strong> Identifying medical terms and symptoms.</li>
+    <li><strong>POS (Part-of-Speech) Tagging:</strong> Understanding sentence structures.</li>
+</ul>
+
+<h2 class="p-3">4. Model Selection</h2>
+<p>Models suitable for sentiment analysis:</p>
+<ul>
+    <li><strong>Traditional NLP:</strong> TF-IDF + Logistic Regression/SVM.</li>
+    <li><strong>Deep Learning:</strong> LSTMs, BERT, RoBERTa, or ClinicalBERT for advanced contextual understanding.</li>
+</ul>
+
+<h2 class="p-3">5. Sentiment Classification</h2>
+<ul>
+    <li><strong>Binary Classification:</strong> Positive vs. Negative sentiment.</li>
+    <li><strong>Multi-class Classification:</strong> Positive, Neutral, Negative.</li>
+    <li><strong>Aspect-based Sentiment Analysis:</strong> Detecting emotions related to specific topics (e.g., "medication effectiveness," "side effects").</li>
+</ul>
+
+<h2 class="p-3">6. Predicting Well-being Trends</h2>
+<ul>
+    <li><strong>Time-series Sentiment Analysis:</strong> Tracking sentiment shifts over time.</li>
+    <li><strong>Anomaly Detection:</strong> Identifying sudden emotional downturns.</li>
+    <li><strong>Personalized Insights:</strong> Recommending interventions based on sentiment patterns.</li>
+</ul>
+    </div>
+  </div>
+<div class="parallax1"></div>
+    <div class="container ">
+      <div class="wappl">
+      <div class="itemsf iteml1"></div>
+      <div class="itemsf iteml2"></div>
+      <div class="itemsf iteml3"></div>
+      <div class="itemsf iteml4"></div>
+      <div class="itemsf iteml5"></div>
+      <div class="itemsf iteml6"></div>
+      <div class="itemsf iteml7"></div>
+      <div class="itemsf iteml8"></div>
+    </div>
+    </div>
+
+    <div class="parallax"></div>
+    <div class="loading-page" style="position: fixed;">
+      <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path
+          d="M415.44 512h-95.11L212.12 357.46v91.1L125.69 512H28V29.82L68.47 0h108.05l123.74 176.13V63.45L386.69 0h97.69v461.5zM38.77 35.27V496l72-52.88V194l215.5 307.64h84.79l52.35-38.17h-78.27L69 13zm82.54 466.61l80-58.78v-101l-79.76-114.4v220.94L49 501.89h72.34zM80.63 10.77l310.6 442.57h82.37V10.77h-79.75v317.56L170.91 10.77zM311 191.65l72 102.81V15.93l-72 53v122.72z"
+        />
+      </svg>
+
+      <div class="name-container">
+        <div class="pogo">Neural Assistance</div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+    integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="./script.js"></script>
+</html>
